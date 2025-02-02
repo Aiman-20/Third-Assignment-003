@@ -17,23 +17,21 @@
     .font-sora {
         font-family: "Sora", serif;
     }
-
-    /* Floating animation for the image */
-    @keyframes float {
-
-        0%,
-        100% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-20px);
-        }
+    @keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
     }
-
-    .animate-float {
-        animation: float 3s ease-in-out infinite;
+    50% {
+      transform: translateY(-10px);
     }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .hero-animate {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
 </style>  
 </head>
 <body class="bg-white">
@@ -83,7 +81,7 @@
     </p>
 
     <div class="relative mt-12 max-w-4xl mx-auto">
-      <img src="Assignment_03_Category_0002/c2-assets/hero-vegetables.png" alt="" class="mx-auto">
+      <img src="Assignment_03_Category_0002/c2-assets/hero-vegetables.png" alt="" class="mx-auto hero-animate">
     </div>
   </main>
     <section class="w-5/6 mx-auto font-sora">
@@ -397,7 +395,7 @@
     class="font-sora w-5/6 mx-auto lg:h-[490px] bg-[#FFF9F4] border-4 absolute rounded-2xl top-0 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
     <div class="grid grid-cols-1 md:grid-cols-9">
         <div class="md:col-span-3 pt-8 mx-auto md:ml-0">
-            <img src="c2-assets/vegetable-busket.png" alt="">
+            <img src="Assignment_03_Category_0002/c2-assets/vegetable-busket.png" alt="">
         </div>
         <div class="md:col-span-6 md:my-auto">
             <div class="flex flex-col justify-center">
